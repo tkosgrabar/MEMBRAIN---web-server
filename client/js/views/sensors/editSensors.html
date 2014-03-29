@@ -1,0 +1,58 @@
+<div class="row height100">
+    <div class="col-xs-2 sideMenu">
+        <ng-membrain-menu></ng-membrain-menu>
+    </div>
+
+    <div class="col-xs-10">
+        <div class="mainContent" ng-init="init()">
+            <h1>Sensor {{sensor.id}}</h1>
+
+            <div ng-show="noSensor">
+                <h3>No sensor with given Id</h3>
+            </div>
+
+            <div ng-show="!noSensor" class="col-xs-6">
+                <form role="form">
+                    <div class="form-group">
+                        <label>Sensor Id :</label>
+                        <input class="form-control" ng-model="sensor.id">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Type :</label>
+                        <input class="form-control" ng-model="sensor.type">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Location :</label>
+
+                        <div class="form-inline">
+                        <span>
+                            <label>x</label>
+                            <input class="form-control" ng-model="sensor.location.x">
+                        </span>
+                        <span>
+                            <label>y</label>
+                            <input class="form-control" ng-model="sensor.location.y">
+                        </span>
+                        <span>
+                            <label>z</label>
+                            <input class="form-control" ng-model="sensor.location.z">
+                        </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interval :</label>
+                        <input class="form-control" ng-model="sensor.interval">
+                    </div>
+                </form>
+                <button class="btn btn-primary pull-right"
+                        ng-click="onSave()"
+                        translate>
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Membrain Admin</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="http:/netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body ng-app="membrain">
+
+<ng-membrain-header></ng-membrain-header>
+
+<div ng-view class="viewContainer"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
+<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-cookies.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-route.js"></script>
+
+<script src="js/membrain.js"></script>
+
+<script src="js/directives/header.js"></script>
+<script src="js/directives/menu.js"></script>
+
+<script src="js/services/httpService.js"></script>
+
+<script src="js/controllers/loginCtrl.js"></script>
+<script src="js/controllers/sensors/sensorsCtrl.js"></script>
+<script src="js/controllers/sensors/editSensorsCtrl.js"></script>
+<script src="js/controllers/hubCtrl.js"></script>
+
+
+</body>
+</html>

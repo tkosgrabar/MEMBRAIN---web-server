@@ -1,0 +1,46 @@
+<div class="row height100">
+    <div class="col-xs-2 sideMenu">
+        <ng-membrain-menu></ng-membrain-menu>
+    </div>
+
+    <div class="col-xs-10">
+        <div class="mainContent" ng-init="init()">
+            <h1>Sensors</h1>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Type
+                        </th>
+                        <th>
+                            Location
+                        </th>
+                        <th>
+                            Interval
+                        </th>
+                        <th>
+                            Actions
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="sensor in sensors">
+                        <td>{{sensor.id}}</td>
+                        <td>{{sensor.type}}</td>
+                        <td>x={{sensor.location.x}} y={{sensor.location.y}} z={{sensor.location.z}}</td>
+                        <td>{{sensor.interval}}</td>
+                        <td>
+                            <a title="Update" class="btn-link" ng-click="onUpdate(sensor)"><i class="fa fa-pencil-square-o"></i></a>
+                            <a title="Measurements" class="btn-link" ng-click="onMeasurements(sensor)"><i class="fa fa-bar-chart-o"></i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

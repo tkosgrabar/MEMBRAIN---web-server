@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+}
+
+.logoImg {
+    height: 40px;
+    margin: 5px;
+}
+
+.viewContainer {
+    padding-top: 50px;
+    height: 100%;
+}
+
+.login {
+}
+
+.m50 {
+    margin-top: 50px;
+}
+
+.m10 {
+    margin-top: 10px;
+}
+
+.sideMenu {
+    height: 100%;
+    background-color: #222222;
+    padding-right: 0px !important;
+}
+
+.sideMenu .row {
+    height: 60px;
+    padding: 20px;
+}
+
+.sideMenu .row:hover {
+    background-color: #2e2e2e;
+    cursor: pointer;
+}
+
+.sideMenu a {
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.mainContent {
+    padding: 40px;
+}
+
+.height100 {
+    height: 100%;
+}
+
+p>label {
+    display: inline-block;
+    width: 100px;
+}
+
+p>input {
+    width: 100px;
+}

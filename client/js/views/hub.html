@@ -1,0 +1,87 @@
+<div class="row height100">
+    <div class="col-xs-2 sideMenu">
+        <ng-membrain-menu></ng-membrain-menu>
+    </div>
+
+    <div class="col-xs-10">
+        <div class="mainContent" ng-init="init()">
+            <h1>Hub</h1>
+
+            <div class="col-xs-6">
+                <h2> Hub status : </h2>
+                <table>
+                    <tr>
+                        <td>AdressWidth</td>
+                        <td>{{status.AdressWidth}}</td>
+                    </tr>
+                    <tr>
+                        <td>CEPinState</td>
+                        <td>{{status.CEPinState}}</td>
+                    </tr>
+                    <tr>
+                        <td>CRCProtection</td>
+                        <td>{{status.CRCProtection}}</td>
+                    </tr>
+                    <tr>
+                        <td>ConfiguredAs</td>
+                        <td>{{status.ConfiguredAs}}</td>
+                    </tr>
+                    <tr>
+                        <td>HubStatus</td>
+                        <td>{{status.HubStatus}}</td>
+                    </tr>
+
+                    <tr>
+                        <td>LostPackets</td>
+                        <td>{{status.LostPackets}}</td>
+                    </tr>
+                    <tr>
+                        <td>MRC</td>
+                        <td>{{status.MRC}}</td>
+                    </tr>
+                    <tr>
+                        <td>OperatingFrequency</td>
+                        <td>{{status.OperatingFrequency}}</td>
+                    </tr>
+                    <tr>
+                        <td>OutputPower</td>
+                        <td>{{status.OutputPower}}</td>
+                    </tr>
+                    <tr>
+                        <td>RWT</td>
+                        <td>{{status.RWT}}</td>
+                    </tr>
+                    <tr>
+                        <td>ReceiveAdress</td>
+                        <td>{{status.ReceiveAdress}}</td>
+                    </tr>
+                    <tr>
+                        <td>RetransmittedPackets</td>
+                        <td>{{status.RetransmittedPackets}}</td>
+                    </tr>
+                    <tr>
+                        <td>RxFIFO</td>
+                        <td>{{status.RxFIFO}}</td>
+                    </tr>
+                    <tr>
+                        <td>TransferSpeed</td>
+                        <td>{{status.TransferSpeed}}</td>
+                    </tr>
+                    <tr>
+                        <td>TransmitAdress</td>
+                        <td>{{status.TransmitAdress}}</td>
+                    </tr>
+                    <tr>
+                        <td>TxFIFO</td>
+                        <td>{{status.TxFIFO}}</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="col-xs-6">
+
+            </div>
+        </div>
+    </div>
+</div>
